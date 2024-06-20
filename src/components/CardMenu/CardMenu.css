@@ -1,0 +1,32 @@
+.card {
+  text-align: center;
+  width: 20%;
+  height: 400px;
+  background-color: #ececec;
+  border-radius: 20px;
+  padding: 20px;
+}
+.card .title {
+  margin-bottom: 5px;
+}
+.card-img {
+  width: 80%;
+  height: 200px;
+}
+.price {
+  font-weight: 600;
+  font-size: 16px;
+}
+.rating {
+  font-size: 23px;
+}
+.add-card {
+  margin-top: 5px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  font-size: 20px;
+  cursor: pointer;
+}
