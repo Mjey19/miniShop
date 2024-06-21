@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="wrapper">
-      {isOpenCart && <Drawer />}
+       <Drawer isOpenCart={isOpenCart} />
       <button className="menu__btn" onClick={() => dispatch(openCart())}>
         Корзина
       </button>
