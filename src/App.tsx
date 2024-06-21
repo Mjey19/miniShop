@@ -4,6 +4,7 @@ import CardMenu from "./components/CardMenu/CardMenu";
 import Drawer from "./components/Drawer/Drawer";
 import NavBlock from "./components/NavBlock/NavBlock";
 import Catalog from "./pages/Catalog";
+import PageError from "./pages/PageError";
 
 import CardInterface from "./module/CardInterface";
 
@@ -50,6 +51,7 @@ function App() {
               />
             }
           />
+          <Route path="*" element={<PageError />} />
         </Routes>
       </div>
     </div>
