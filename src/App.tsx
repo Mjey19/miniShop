@@ -31,7 +31,7 @@ function App() {
       <div className="card-inner">
         <Routes>
           <Route
-            path="/:types"
+            path="/miniShop/:types"
             element={
               <Catalog
                 cardCurrentPage={CARD_COUNT}
@@ -41,7 +41,7 @@ function App() {
             }
           />
           <Route
-            path="/"
+            path="/miniShop"
             element={
               <Catalog
                 cardCurrentPage={CARD_COUNT}

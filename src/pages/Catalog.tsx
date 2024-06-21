@@ -3,6 +3,7 @@ import CardMenu from "../components/CardMenu/CardMenu";
 import CardInterface from "../module/CardInterface";
 import Pagination from "../components/Pagination/Pagination";
 import { useParams } from "react-router";
+import { Link } from "react-router-dom";
 import {
   useGetItemsQuery,
   useGetTypesItemsQuery,
@@ -18,12 +19,18 @@ function Catalog({
   setCurrentPage: (page: number) => void;
 }) {
   const { types } = useParams();
-  const { data = [], isLoading } = useGetItemsQuery({
+  const {
+    data = [],
+    isLoading,
+    isError,
+  } = useGetItemsQuery({
     types,
     limit: cardCurrentPage,
     currentPage: currentPage,
   });
   const totalItems = useGetTypesItemsQuery(types);
+  if (isError) return <Link to={"/miniShop"}>Произошла ошибка</Link>;
+
   return (
     <>
       {currentPage === 0 ? (
