@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import CardMenu from "./components/CardMenu/CardMenu";
 import Drawer from "./components/Drawer/Drawer";
 import NavBlock from "./components/NavBlock/NavBlock";
